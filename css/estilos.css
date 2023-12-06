@@ -1,0 +1,257 @@
+
+.formulario {
+  background-color: lightblue;
+  padding: 1%;
+  width: 70vw;
+  margin-left: 15vw; }
+
+.ubicacion {
+  margin-top: 10vh; }
+  .ubicacion .ubicacion-titulo {
+    align-self: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+  /* /* font-family: /* "Raleway", sans-serif; *//* "SF Pro Text", "SF Pro Icons", */
+   /* "Helvetica Neue", Helvetica, Arial, sans-serif;  */ }
+
+/* NAV */
+.header-nav {
+  background-color: #353532;
+}
+
+.header-nav-menu {
+  width: 100%;
+  justify-content: space-evenly;
+  /* letter-spacing: 2px;  */
+}
+
+.color-item {
+  color: white; 
+  font-size:medium;
+}
+
+.color-item:hover {
+  color:white;
+  font-weight: bold;
+}
+
+.header-nav .header-nav-menu .sub-item:placeholder-shown {
+        background-color: black;
+        color:black;
+}
+
+nav ul li:hover {
+        display: flex;
+        flex-direction: column;
+        color:black; }
+  nav ul li ul li:hover {
+    display: flex;
+    flex-direction: column; 
+    color:black;
+  }
+
+/* .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show >  *//* .color-item { */
+/*   /* color: white;}*/ 
+
+/* FIN NAV */
+
+/* VENTA */
+.imag-central {
+  margin-top: 3%;
+  display:flex;
+  justify-content: center;
+  align-items: center; }
+/* FIN VENTA */
+
+.titulo-pagina {
+  font-size: 240%;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  /* font-weight: bold; */
+  letter-spacing: 2px; }
+
+/* NOSOTROS */
+.description {
+  font-size: 110%;
+  /* font-weight: bold; */
+  margin-top: 5%; }
+  .description .description-detalle {
+    font-size: 100%;
+    margin: 1% 15% 1% 15%; 
+    text-align: justify;}
+      .description .description-detalle-valores{
+        /* width: 42%; */
+        margin-top: 5%;
+        font-weight: bold;
+        
+        /* font-weight: bolder; */ }
+      .description .description-detalle-items {
+        padding-left: 6%;
+        width: 20%;
+        /* list-style-image: url("../imagenes/check.png"); } */
+        font-size: 90%;}
+
+.cv {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 8% 5% 5% 10%; }
+  .cv .cv-column {
+    width: 50%;
+    padding-right: 8%; }
+    .cv .cv-column .cv-titulos p {
+      background-color:#00a2a8;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border-radius: 0 0 1rem 1rem;}
+    .cv .cv-column .cv-items {
+      font-size: 80%; }        
+
+/* FIN NOSOTROS */
+
+/* PRODUCTOS */
+.productos {
+  font-size: 110%;
+  margin-top: 5%; }
+  .productos-detalle {
+    font-size: 100%;
+    margin: 10% 15% 15% 15%;}
+      .productos-detalle-items {
+        padding-left: 6%;
+       /*  width: 20%; */
+        /* list-style-image: url("../imagenes/check.png"); } */
+        font-size: 90%;}
+
+.titulo {
+  font-size: 160%;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px; }
+.productos-descripcion {
+  font-size: 95%;
+  margin: 1% 15% 3% 15%; 
+  text-align: justify;} 
+/* FIN PRODUCTOS */
+
+/* FOOTER */
+.contenedor-footer {
+  background-color:lightgray;
+  margin-top: 0vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around; }
+  .contenedor-footer .contenedor-footer-leyenda {
+    color:#3b3b3b;
+    /* text-shadow: 2px 2px 5px black; */
+    letter-spacing: 4px;
+    margin: 2% 0 0 3%;
+  }
+   .contenedor-footer .contenedor-footer-leyenda h3 {
+    font-size: 1.3rem;
+   }
+  .contenedor-footer .contenedor-footer-detalle {
+    width:auto;
+    font-size: 0.9rem;
+    /* font-weight: bold; */
+    display: flex;
+    padding: 1% 0 0 1%;
+    flex-direction: column; }
+    .contenedor-footer .contenedor-footer-detalle .fas {
+      color:rgb(37, 134, 141);
+      font-size: 10px;
+      margin-right: 2%; }
+  .contenedor-footer .contenedor-footer-redes {
+    width:auto;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin-right: 5%; }
+    .contenedor-footer .contenedor-footer-redes a {
+      margin-right: 5%; }
+      .contenedor-footer .contenedor-footer-redes a .fab {
+        color:rgb(37, 134, 141);
+        font-size: 2rem; }
+  .contenedor-footer .contenedor-footer-copyright {
+    width: 100%;
+    margin: 1% 2% 0 2%;
+    text-align: center;
+    font-size: 0.7rem;
+    /* font-weight: bold; */ }
+
+/* FIN FOOTER */
+
+/* MEDIA QUERIES */
+@media (min-width: 992px) {
+  .header-nav {
+    height: 70px; }
+    /* .header-nav .header-nav-logo { */
+    /*   margin-top: 80px; }  */}
+
+@media (max-width: 992px) {
+  .header-nav-logo {
+    width: 50%; }
+  .titulo-pagina {
+    margin-top: 9rem; }
+  .formulario {
+    margin-left: 2vw;
+    width: 96vw; } }
+
+@media (max-width: 768px) {
+  .section-venta {
+    margin: 7% 0; }
+    .section-venta .section-venta-titulo {
+      font-size: 1.7rem; }
+    .section-venta .section-venta-parrafo {
+      font-size: 1.1rem;
+      padding: 3% 5% 0 5%; }
+  .contenedor-footer .contenedor-footer-leyenda {
+    font-size: 1.7rem;
+    letter-spacing: 2px; }
+  .contenedor-footer .contenedor-footer-redes .fab {
+    font-size: 2.9rem;
+    margin-right: 3%; } }
+
+@media (max-width: 576px) {
+  .header-nav-logo {
+    width: 40%; }
+  a .fas {
+    font-size: 1.5rem; }
+  .section-venta .section-venta-titulo {
+    font-size: 1.4rem; }
+  .section-venta .section-venta-parrafo {
+    font-size: 0.9rem; }
+  .contenedor-footer .contenedor-footer-leyenda {
+    letter-spacing: unset; }
+  .contenedor-footer .contenedor-footer-detalle {
+    width: 100%;
+    padding-left: 10%; }
+  .contenedor-footer .contenedor-footer-redes {
+    width: 100%;
+    justify-content: center;
+    margin: 0; }
+    .contenedor-footer .contenedor-footer-redes .fab {
+      margin: 2%; } }
+
+@media (max-width: 400px) {
+  .section-venta .section-venta-titulo {
+    font-size: 1.1rem; }
+  .section-venta .section-venta-parrafo {
+    font-size: 0.9rem; } }
+
+@media (max-width: 350px) {
+  .titulo-pagina {
+    font-size: 190%;
+    margin-top: 6.2rem; } }
+
+/* FIN MEDIA QUERIES */
