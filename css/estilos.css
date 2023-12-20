@@ -27,8 +27,8 @@ body {
 }
 
 .header-nav-menu {
-  width: 100%;
-  justify-content: space-evenly;
+  width: 100%; 
+  justify-content:right;
   /* letter-spacing: 2px;  */
 }
 
